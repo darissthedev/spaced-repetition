@@ -1,5 +1,5 @@
 # Spaced Repetition Capstone
-
+Michelle LaLonde
 ## Setup
 
 To setup the application
