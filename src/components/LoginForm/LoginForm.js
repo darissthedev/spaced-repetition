@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { Input, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import UserContext from '../../contexts/UserContext'
 import Button from '../Button/Button'
+import './LoginForm.css'
 
 class LoginForm extends Component {
   static defaultProps = {
@@ -40,19 +42,28 @@ class LoginForm extends Component {
     this.firstInput.current.focus()
   }
 
+  handleError = (ev) => {
+    ev.preventDefault();
+    this.setState({
+      error:null
+    })
+  }
+
   render() {
     const { error } = this.state
     return (
       <form
         className='LoginForm'
+        id='login-form'
         onSubmit={this.handleSubmit}
       >
-        <div role='alert'>
+        <div role='alert' className="Error">
           {error && <p>{error}</p>}
         </div>
-        <div>
+        <div className='username-container'>
           <Label htmlFor='login-username-input'>
-            Username
+            Username<br/>
+            Demo: 'testing'
           </Label>
           <Input
             ref={this.firstInput}
@@ -61,9 +72,10 @@ class LoginForm extends Component {
             required
           />
         </div>
-        <div>
+        <div className='password-container'>
           <Label htmlFor='login-password-input'>
-            Password
+            Password<br/>
+            Demo: '!Testing1'
           </Label>
           <Input
             id='login-password-input'
@@ -72,9 +84,10 @@ class LoginForm extends Component {
             required
           />
         </div>
-        <Button type='submit'>
+        <Button type='submit' id="login-button" className="submit stylish-btn">
           Login
         </Button>
+        <Link className="already-signed-up" to='/register'>Sign up</Link>
       </form>
     )
   }

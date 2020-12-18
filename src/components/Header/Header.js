@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
@@ -11,30 +12,53 @@ class Header extends Component {
     this.context.processLogout()
   }
 
+  openNav = () => {
+    document.getElementById('nav').style.width = '200px'
+  }
+
+  closeNav = () => {
+    document.getElementById('nav').style.width = '0'
+  }
+  
   renderLogoutLink() {
     return (
       <div>
-        <span>
-          {this.context.user.name}
-        </span>
-        <nav>
-          <Link
+        <i className="fas fa-bars fa-2x open" onClick={this.openNav}></i>
+        <nav id="nav">
+        <i className="fas fa-bars fa-2x closebtn" onClick={this.closeNav}></i>
+          <Link 
+            id='home'
+            className='nav-link'
+            to='/'>
+            Home
+          </Link>
+          <Link 
+            id='logout'
+            className='nav-link'
             onClick={this.handleLogoutClick}
             to='/login'>
             Logout
           </Link>
         </nav>
+        <span className="current-user">
+          {`Hello, ${this.context.user.name}!`}
+        </span>
       </div>
     )
   }
 
   renderLoginLink() {
     return (
-      <nav>
-        <Link to='/login'>Login</Link>
-        {' '}
-        <Link to='/register'>Sign up</Link>
-      </nav>
+      <>
+        <i className="fas fa-bars fa-2x open" onClick={this.openNav}></i>
+        <nav id="nav">
+          <i className="fas fa-bars fa-2x closebtn" onClick={this.closeNav}></i>
+          <Link to='/' className='nav-link'>Home</Link>
+          <Link to='/login' className='nav-link' onClick={this.closeNav}>Login</Link>
+          {' '}
+          <Link to='/register' className='nav-link' onClick={this.closeNav}> Sign up</Link>
+        </nav>
+      </>
     )
   }
 
@@ -47,8 +71,9 @@ class Header extends Component {
           </Link>
         </h1>
         {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
+        ? this.renderLogoutLink()
+        : this.renderLoginLink()}
+
       </header>
     );
   }
