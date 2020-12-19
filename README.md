@@ -1,8 +1,10 @@
 # Spaced Repetition Capstone
 
 ---------------------------------------------------------------------------------
-
-## Collaborators: Zeid Diez, Michelle LaLonde, Marcus Ridley
+## Collaborators:
+Zeid Diez,
+Michelle LaLonde,
+Marcus Ridley
 
 ---------------------------------------------------------------------------------
 
