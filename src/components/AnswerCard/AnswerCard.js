@@ -20,7 +20,7 @@ export class AnswerCard extends Component {
                 <p>{`Total score: ${results.totalScore}`}</p>
             </div>  
             <button type="button" className="next stylish-btn" onClick={handleNextQuestion}>
-            Move to the Next Question
+            Next Question
             </button>                  
         </div>
       </BackSide>
