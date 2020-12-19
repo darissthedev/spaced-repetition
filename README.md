@@ -1,20 +1,20 @@
-## Spaced Repetition Capstone
+# Spaced Repetition Capstone
 
 ---------------------------------------------------------------------------------
 
-# Authors: Michelle, Marcus, Zeid
+## Authors: Michelle, Marcus, Zeid
 
 ---------------------------------------------------------------------------------
 
-# Live Demo:
+## Live Demo:
 
-# Server Repo:
+## Server Repo:
 
-# Client Repo:
+## Client Repo:
 
 ---------------------------------------------------------------------------------
 
-# About:
+## About:
 
 Space Repetition Learning tool
 
@@ -25,7 +25,7 @@ Spaced repetition is an evidence-based learning technique that incorporates incr
 
 ---------------------------------------------------------------------------------
 
-# Setup
+## Setup
 
 To setup the application
 
@@ -38,13 +38,13 @@ Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-re
 
 ---------------------------------------------------------------------------------
 
-# Running project
+## Running project
 
 This is a create-react-app project so npm start will start the project in development mode with hot reloading by default.
 
 ---------------------------------------------------------------------------------
 
-# Running the tests
+## Running the tests
 
 This project uses Cypress IO for integration testing using the Chrome browser.
 
