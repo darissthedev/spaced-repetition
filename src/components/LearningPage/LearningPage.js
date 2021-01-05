@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './LearningPage.css';
 import Flippy from 'react-flippy';

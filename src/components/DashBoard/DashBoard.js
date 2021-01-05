@@ -69,11 +69,11 @@ export default class Dashboard extends React.Component{
                     <button type="button" className="stylish-btn" onClick ={(ev) => {
                         ev.preventDefault()
                         this.previousWord()
-                    }}>previous</button>
+                    }}>Previous Word</button>
                     <button type="button" className="stylish-btn" onClick ={(ev) => {
                         ev.preventDefault()
                         this.nextWord()
-                    }}>next</button>
+                    }}>Next Word</button>
                 </div>
                 <h3>Words to practice</h3>
                 {this.renderDisplay()}
