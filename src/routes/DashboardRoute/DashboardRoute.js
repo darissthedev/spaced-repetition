@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Dashboard from '../../components/DashBoard/Dashboard';
+import Dashboard from '../../components/DashBoard/DashBoard';
 
 class DashboardRoute extends Component {
 

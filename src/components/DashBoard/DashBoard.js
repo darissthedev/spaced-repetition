@@ -4,7 +4,7 @@ import DashboardService from '../../services/dashboard-service';
 import DashCard from '../DashCard/DashCard';
 import UserContext from '../../contexts/UserContext'
 import Loading from '../Loading/Loading'
-import './Dashboard.css'
+import './DashBoard.css'
 
 export default class Dashboard extends React.Component{
     static contextType = UserContext
