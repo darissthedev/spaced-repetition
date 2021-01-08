@@ -1,6 +1,6 @@
 # Spaced Repetition Capstone
 
-
+TODO: RUN CYPRESS TESTS, FIX FAVICON, FIX SERVER ERROR
 ---------------------------------------------------------------------------------
 ## Collaborators:
 Zeid Diez,
