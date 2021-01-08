@@ -1,4 +1,6 @@
 # Spaced Repetition Capstone
+
+TODO: RUN CYPRESS TESTS, FIX FAVICON, FIX SERVER ERRORS, LANDING PAGE REGISTER(MAYBE)
 https://spaced-repetition-1pqd0783u.vercel.app/login
 
 ---------------------------------------------------------------------------------
