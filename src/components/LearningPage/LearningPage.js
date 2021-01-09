@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './LearningPage.css';
 import Flippy from 'react-flippy';
-import LearningPageService from '../../services/learningpage-service'
+import LearningPageService from '../../services/user-service'
 import GuessCard from '../GuessCard/GuessCard'
 import AnswerCard from '../AnswerCard/AnswerCard'
 
-class LearningPage extends React.Component{
+class LearningPage extends Component{
     constructor(){
         super()
         this.state = {

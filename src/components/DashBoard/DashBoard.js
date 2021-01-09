@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import DashboardService from '../../services/dashboard-service';
+import UserService from '../../services/user-service';
 import DashCard from '../DashCard/DashCard';
 import UserContext from '../../contexts/UserContext'
 import Loading from '../Loading/Loading'
 import './DashBoard.css'
 
-export default class Dashboard extends React.Component{
+export default class DashBoard extends Component{
     static contextType = UserContext
     state = {
         current:null,
@@ -17,7 +17,7 @@ export default class Dashboard extends React.Component{
         error: null
     }
     componentWillMount() {
-        DashboardService.fetchWords()
+        UserService.fetchWords()
         .then(lang => {
             this.setState({
                 wordList:lang.words,
