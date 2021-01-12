@@ -1,23 +1,19 @@
 # Spaced Repetition Capstone
 
-TODO: RUN CYPRESS TESTS, FIX FAVICON, FIX SERVER ERRORS, LANDING PAGE REGISTER(MAYBE)
-https://spaced-repetition-1pqd0783u.vercel.app/login
-
 ---------------------------------------------------------------------------------
 ## Collaborators:
-Zeid Diez,
+
 Michelle LaLonde,
-Marcus Ridley,
 Dariss Harris
 
 
 ---------------------------------------------------------------------------------
 
-## Live Demo:
+## Live Demo: https://spaced-repetition-navy.vercel.app/register
 
-## Server Repo:
+## Server Repo: https://github.com/mismyl123/spaced-repetition-api
 
-## Client Repo:
+## Client Repo: https://github.com/mismyl123/spaced-repetition
 
 ---------------------------------------------------------------------------------
 
@@ -31,6 +27,7 @@ What is Space Repetition?
 Spaced repetition is an evidence-based learning technique that incorporates increasing intervals of time between subsequent review of previously learned material in order to exploit the psychological spacing effect. -- From Wikipedia
 
 Registration page
+![Register Page](/screenshots/signup.png)
 User story:
 
 As a prospective user, I can register an account so that I can login and use the application.
@@ -44,6 +41,7 @@ As a first time user:
     If any of my information is incorrect, I'm given an appropriate error message and the option to correct my information.
 
 Login page
+![Login Page](/screenshots/login.png)
 User story:
 
 As a registered user, I can login to the application so that I can begin learning.
@@ -83,6 +81,8 @@ When viewing the dashboard as a logged in user:
     I'm shown my count for correct and incorrect responses for each word
     I'm given a button/link to start learning
     I'm shown the total score for guessing words correctly
+
+![Dashboard](/screenshots/dashboard.png)
 
 Learning page - 1
 User story:
