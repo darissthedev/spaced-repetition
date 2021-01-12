@@ -1,38 +1,14 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import UserContext from '../../contexts/UserContext';
-import UserService from '../../services/user-service';
-import DashBoard from '../../components/DashBoard/DashBoard';
+import React, { Component } from 'react'
+import Dashboard from '../../components/DashBoard/DashBoard';
 
 class DashboardRoute extends Component {
-  static contextType = UserContext;
-  state = {
-    width: `${this.context.score}%`,
-  };
-
-  componentDidMount() {
-    UserService.getUserData().then((data) => {
-      this.context.setLanguage(data.language.name);
-      this.context.setScore(data.language.total_score);
-      this.context.setWords(data.words);
-    });
-  }
-
   render() {
     return (
-      <section className="dashboard-main">
-        <div className="dashboard-header">
-          <h2>{this.context.language}</h2>
-          <p>Total correct answers: {this.context.score}</p>
-          <Link className="btn" to="/learn">
-            Start practicing
-          </Link>
-          <h3>Words to practice</h3>
-        </div>
-        <DashBoard />
+      <section>
+        <Dashboard/>
       </section>
     );
   }
 }
 
-export default DashboardRoute;
+export default DashboardRoute

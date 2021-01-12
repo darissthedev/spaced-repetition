@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import Loading from '../Loading/Loading'
 import { BackSide } from 'react-flippy'
 import './AnswerCard.css'
-import UserContext from '../../contexts/UserContext'
 
 class AnswerCard extends Component {
-  static contextType = UserContext;
   render() {
     const { word, results, loading, handleNextQuestion } = this.props
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './LearningPage.css';
 import Flippy from 'react-flippy';
-import LearningPageService from '../../services/user-service'
+import LearningPageService from '../../services/learningpage-service'
 import GuessCard from '../GuessCard/GuessCard'
 import AnswerCard from '../AnswerCard/AnswerCard'
 

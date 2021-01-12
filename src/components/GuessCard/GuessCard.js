@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import UserContext from '../../contexts/UserContext'
 import Loading from '../Loading/Loading'
 import { FrontSide } from 'react-flippy'
 import './GuessCard.css'
 
 export class GuessCard extends Component {
-  static contextType = UserContext;
   render() {
     const { word, loading, correct, incorrect, inputValue, handleSubmitAnswer } = this.props
     return (
