@@ -69,6 +69,9 @@ class Header extends Component {
           <Link to='/'>
           <span className="shadowbox">Spaced Repetition</span>
           </Link>
+          <button id='logoutbutton' onClick={this.context.processLogout}>
+            Logout
+          </button>
         </h1>
         {TokenService.hasAuthToken()
         ? this.renderLogoutLink()

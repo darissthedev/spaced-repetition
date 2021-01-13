@@ -11,3 +11,6 @@
   .Error{
     color:red;
   }
+  #logoutbutton {
+    display:none;
+  }

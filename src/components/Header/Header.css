@@ -1,4 +1,4 @@
-nav {
+#nav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -11,7 +11,7 @@ nav {
     transition: .6s;
   }
   
-  nav > .nav-link {
+  #nav > .nav-link {
     padding: 8px 8px 8px 32px;
     color: white;
     font-size: 25px;
@@ -19,11 +19,11 @@ nav {
     transition : .3s;
   }
   
-  nav .nav-link:hover {
+  #nav .nav-link:hover {
     color: white;
   }
   
-  nav .closebtn {
+  #nav .closebtn {
     position: absolute;
     top: 0;
     right: 10px;

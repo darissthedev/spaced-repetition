@@ -6,6 +6,9 @@
         align-items: center;
     }
   }
+  #logoutbutton {
+    display: block;
+  }
   
   .stylish-btn {
     padding: 10px 12px;
