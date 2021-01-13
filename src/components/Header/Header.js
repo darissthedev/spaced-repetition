@@ -66,7 +66,7 @@ class Header extends Component {
       <header>
         <h1>
           <Link to='/'>
-            Spaced repetition
+          <span className="shadowbox">Spaced Repetition</span>
           </Link>
         </h1>
         {TokenService.hasAuthToken()

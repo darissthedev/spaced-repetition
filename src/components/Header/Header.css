@@ -31,6 +31,17 @@ nav {
     margin-left: 50px;
     color: white;
   }
+
+  .shadowbox {
+    box-shadow: 10px 10px 10px #000;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #111;
+    margin: 10px;
+  }
   
   @media screen and (max-height: 450px) {
     nav {padding-top: 15px;}
