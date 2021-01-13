@@ -10,12 +10,14 @@
   .stylish-btn {
     padding: 10px 12px;
     border: 2px solid #BFC0C0;
-    color: #BFC0C0;
+    color: #fffbfb;
     font-size: 1em;
+    font-family: 'Fraunces', sans-serif;
     letter-spacing: 1.5px;
-    background-color: #2D3142;
+    background-color: #111;
     margin-bottom: 2em;
     border-radius: 6px;
+    justify-content: center;
   }
   
   .btn-container {
@@ -23,7 +25,8 @@
     flex-flow: row nowrap;
     margin: 0 auto;
     width: 25%;
-    justify-content: space-around;
+    justify-content: center;
+  
   }
   
   .DashCard-Container > h2 {
@@ -51,6 +54,17 @@
       justify-content: flex-end;
       font-size: 18px;
     }
+  }
+
+  .shadowbox {
+    box-shadow: 10px 10px 10px #000;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #111;
+    margin: 10px;
   }
   
   @media screen and (max-width: 630px) {

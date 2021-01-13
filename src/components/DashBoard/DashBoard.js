@@ -62,20 +62,20 @@ export default class Dashboard extends Component{
         const { language, totalScore } = this.state
         return (
             <div className="DashCard-Container">
-                <h2 className="language_name">{language}</h2>
-                <h2 className="score">{`Total Score: ${totalScore}`}</h2>
+                <h2 className="language_name"><span className="shadowbox">{language}</span></h2>
+                <h2 className="score"><span className="shadowbox">{`Total correct answers: ${totalScore}`}</span></h2>
                 <Link to={"/learn"}><button className="stylish-btn" >{`Start practicing`}</button></Link>
                 <div className="btn-container">
                     <button type="button" className="stylish-btn" onClick ={(ev) => {
                         ev.preventDefault()
                         this.previousWord()
-                    }}>Previous Word</button>
+                    }}>back</button>
                     <button type="button" className="stylish-btn" onClick ={(ev) => {
                         ev.preventDefault()
                         this.nextWord()
-                    }}>Next Word</button>
+                    }}>next</button>
                 </div>
-                <h3>Words to practice</h3>
+                <h3><span className="shadowbox">Words to practice</span></h3>
                 {this.renderDisplay()}
             </div>
         )

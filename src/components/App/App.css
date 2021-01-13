@@ -1,4 +1,3 @@
-
 .login-form, .registration-page, .not-found-page {
     display: flex;
     flex-flow: column wrap;

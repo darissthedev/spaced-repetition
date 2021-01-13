@@ -22,9 +22,9 @@ class Header extends Component {
   renderLogoutLink() {
     return (
       <div>
-        <i className="fas fa-bars fa-2x open" onClick={this.openNav}></i>
+        <i className="fas fa-bars fa-3x open" onClick={this.openNav}></i>
         <nav id="nav">
-        <i className="fas fa-bars fa-2x closebtn" onClick={this.closeNav}></i>
+        <i className="fas fa-bars fa-3x closebtn" onClick={this.closeNav}></i>
           <Link 
             id='home'
             className='nav-link'
@@ -40,8 +40,9 @@ class Header extends Component {
           </Link>
         </nav>
         <span className="current-user">
-          {`Hello, ${this.context.user.name}!`}
-        </span>
+        <span className="shadowbox"> {`Hello, ${this.context.user.name}!`}
+        </span>        
+      </span>
       </div>
     )
   }
@@ -49,9 +50,9 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <>
-        <i className="fas fa-bars fa-2x open" onClick={this.openNav}></i>
+        <i className="fas fa-bars fa-3x open" onClick={this.openNav}></i>
         <nav id="nav">
-          <i className="fas fa-bars fa-2x closebtn" onClick={this.closeNav}></i>
+          <i className="fas fa-bars fa-3x closebtn" onClick={this.closeNav}></i>
           <Link to='/' className='nav-link'>Home</Link>
           <Link to='/login' className='nav-link' onClick={this.closeNav}>Login</Link>
           {' '}

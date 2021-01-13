@@ -25,7 +25,7 @@ describe(`User story: User's dashboard`, function() {
   })
 
   beforeEach(() => {
-    cy.login().visit('/')
+    cy.login().visit('/login')
   })
 
   it('has h2 with title, total score, subtitle and link', () => {
@@ -52,10 +52,12 @@ describe(`User story: User's dashboard`, function() {
 
   it(`shows an LI and link for each language`, () => {
     cy.wait('@languageRequest')
+    
     cy.fixture('language.json').then(({ words }) => {
-
-      words.forEach((word, idx) => {
-        cy.get('main section li').eq(idx).within($li => {
+      let wds=[];
+      wds=words.slice(0,3);
+      wds.forEach((word, idx) => {
+        cy.get('div[class="DashCard"]').eq(idx).within($div  => {
 
           cy.get('h4').should('have.text', word.original)
 
